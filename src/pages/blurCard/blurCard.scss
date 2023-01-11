@@ -1,0 +1,192 @@
+:root {
+  --blur-color: #e294ff;
+  --foreground-color: #ffffff;
+  --page-bg-color: #0e0f11;
+}
+
+.blurcard-body {
+  background-color: var(--page-bg-color);
+  color: var(--foreground-color);
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 240px;
+  background-color: #ffffff08;
+  box-shadow: inset 0 0 0 1px #ffffff11, 0 1px 4px #000000bf;
+  border-radius: 24px;
+  transition: 200ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+
+  &:hover {
+    transform: scale(1.025);
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0 0 0 1px #ffffff11, 0 4px 12px 2px #000000bf;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  pointer-events: none;
+  & > * {
+    margin: 0;
+  }
+}
+
+.card-hero-icon {
+  background-color: rgba(50, 50, 50, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 0 auto 30px auto;
+}
+
+.card-hero-icon svg {
+  width: 60px;
+  margin: 20px;
+  fill: var(--foreground-color);
+}
+
+svg {
+  fill: var(--foreground-color);
+}
+
+svg path {
+  stroke: var(--foreground-color);
+}
+
+svg line {
+  stroke: var(--foreground-color);
+}
+
+svg polyline {
+  stroke: var(--foreground-color);
+}
+
+svg polygon {
+  stroke: var(--foreground-color);
+}
+
+.card-info-icon svg {
+  width: 16px;
+}
+
+.card-info {
+  margin: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.card-info-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-info-body {
+  line-height: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  & > div {
+    &.c-a:hover ~ .highlight {
+      left: calc(24px * 1 - 12px);
+    }
+    &.c-b:hover ~ .highlight {
+      left: calc(24px * 2 - 12px);
+    }
+    &.c-c:hover ~ .highlight {
+      left: calc(24px * 3 - 12px);
+    }
+    &.c-d:hover ~ .highlight {
+      left: calc(24px * 4 - 12px);
+    }
+    &.c-e:hover ~ .highlight {
+      left: calc(24px * 5 - 12px);
+    }
+    &.c-f:hover ~ .highlight {
+      left: calc(24px * 6 - 12px);
+    }
+    &.c-g:hover ~ .highlight {
+      left: calc(24px * 7 - 12px);
+    }
+    &.c-h:hover ~ .highlight {
+      left: calc(24px * 8 - 12px);
+    }
+    &.c-i:hover ~ .highlight {
+      left: calc(24px * 9 - 12px);
+    }
+    &.c-j:hover ~ .highlight {
+      left: calc(24px * 10 - 12px);
+    }
+
+    &.r-1:hover ~ .highlight {
+      top: calc(24px * 1 - 12px);
+    }
+    &.r-2:hover ~ .highlight {
+      top: calc(24px * 2 - 12px);
+    }
+    &.r-3:hover ~ .highlight {
+      top: calc(24px * 3 - 12px);
+    }
+    &.r-4:hover ~ .highlight {
+      top: calc(24px * 4 - 12px);
+    }
+    &.r-5:hover ~ .highlight {
+      top: calc(24px * 5 - 12px);
+    }
+    &.r-6:hover ~ .highlight {
+      top: calc(24px * 6 - 12px);
+    }
+    &.r-7:hover ~ .highlight {
+      top: calc(24px * 7 - 12px);
+    }
+    &.r-8:hover ~ .highlight {
+      top: calc(24px * 8 - 12px);
+    }
+    &.r-9:hover ~ .highlight {
+      top: calc(24px * 9 - 12px);
+    }
+    &.r-10:hover ~ .highlight {
+      top: calc(24px * 10 - 12px);
+    }
+
+    &.highlight {
+      position: absolute;
+      top: calc(24px * 10 - 12px);
+      left: calc(24px * 1 - 12px);
+      width: 240px;
+      height: 240px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      filter: blur(80px);
+      background-color: var(--blur-color);
+      transition: 150ms;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+  }
+}
