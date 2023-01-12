@@ -20,7 +20,19 @@ export default function FrontPage() {
               <a className="playground-card" href="/blur-card">
                 <div className="playground-card-content">
                   <div className="playground-card-title">Blur hover card</div>
-                  <div className="playground-card-description">Description</div>
+                  <div className="playground-card-description">
+                    Background blur on mouseover. Inspired by Linear
+                  </div>
+                </div>
+              </a>
+              <a className="playground-card" href="/the-button">
+                <div className="playground-card-content">
+                  <div className="playground-card-title">
+                    Pretty cool button
+                  </div>
+                  <div className="playground-card-description">
+                    Inspired by Coffee
+                  </div>
                 </div>
               </a>
             </div>
