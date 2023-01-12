@@ -1,5 +1,5 @@
 // Variables
-$color: #1d1d1d;
+$color: rgb(31, 31, 31);
 $speed: "0.45s";
 $transition: all #{$speed} cubic-bezier(0.31, -0.105, 0.43, 1.4);
 
@@ -13,14 +13,22 @@ a.button {
   height: 64px;
   line-height: 64px;
   margin: auto;
+  outline: none;
   color: #fff;
   cursor: pointer;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   transition: $transition;
   display: flex;
   flex-wrap: nowrap;
+
+  box-shadow: rgba(0, 0, 0, 0.004) 0px 0.783403px 0.783403px 0px,
+    rgba(0, 0, 0, 0.01) 0px 1.92107px 1.92107px 0px,
+    rgba(0, 0, 0, 0.024) 0px 3.63429px 3.63429px 0px,
+    rgba(0, 0, 0, 0.04) 0px 6.35486px 6.35486px 0px,
+    rgba(0, 0, 0, 0.07) 0px 11.0474px 11.0474px 0px,
+    rgba(0, 0, 0, 0.125) 0px 20.2497px 20.2497px 0px,
+    rgba(0, 0, 0, 0.25) 0px 40px 40px 0px;
 
   span,
   .icon,
@@ -56,11 +64,11 @@ a.button {
   }
 
   .icon img {
-    margin-top: 17px;
+    margin-top: 18px;
   }
 
   .icon2 img {
-    margin-top: 17px;
+    margin-top: 18px;
   }
 
   .button-logo {
@@ -77,7 +85,7 @@ a.button {
 
   &:hover {
     span {
-      transform: translateX(-16%);
+      transform: translateX(-26%);
       transition-delay: 0.1s;
     }
     .icon {
