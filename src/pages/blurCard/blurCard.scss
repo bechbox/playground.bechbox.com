@@ -34,6 +34,26 @@
     backdrop-filter: blur(3px);
     box-shadow: inset 0 0 0 1px #ffffff11, 0 4px 12px 2px #000000bf;
   }
+
+  svg {
+    fill: var(--foreground-color);
+  }
+
+  svg path {
+    stroke: var(--foreground-color);
+  }
+
+  svg line {
+    stroke: var(--foreground-color);
+  }
+
+  svg polyline {
+    stroke: var(--foreground-color);
+  }
+
+  svg polygon {
+    stroke: var(--foreground-color);
+  }
 }
 
 .content {
@@ -60,26 +80,6 @@
   width: 60px;
   margin: 20px;
   fill: var(--foreground-color);
-}
-
-svg {
-  fill: var(--foreground-color);
-}
-
-svg path {
-  stroke: var(--foreground-color);
-}
-
-svg line {
-  stroke: var(--foreground-color);
-}
-
-svg polyline {
-  stroke: var(--foreground-color);
-}
-
-svg polygon {
-  stroke: var(--foreground-color);
 }
 
 .card-info-icon svg {

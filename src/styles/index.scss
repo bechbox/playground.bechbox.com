@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #1d1d1d;
+  --bg-color: rgb(251, 251, 251);
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+
+.frontpage {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+.frontpage .inner {
+  padding: 40px;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+}
+
+.theme-switcher {
+  height: 100%;
+}
