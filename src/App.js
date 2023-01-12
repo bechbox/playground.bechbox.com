@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import BlurCard from "./pages/blurCard/blurCard";
 import FrontPage from "./pages/frontPage";
 import NoMatch from "./pages/noMatch";
+import TheButton from "./pages/theButton";
 
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
@@ -15,6 +16,7 @@ import "./App.scss";
 function App() {
   return (
     <Routes>
+      <Route exact path="/the-button" element={<TheButton />} />
       <Route exact path="/blur-card" element={<BlurCard />} />
       <Route exact path="/" element={<FrontPage />} />
       <Route path="*" element={<NoMatch />} />

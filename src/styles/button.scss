@@ -1,0 +1,91 @@
+// Variables
+$color: #1d1d1d;
+$speed: "0.45s";
+$transition: all #{$speed} cubic-bezier(0.31, -0.105, 0.43, 1.4);
+
+a.button {
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  background-color: $color;
+  height: 64px;
+  line-height: 64px;
+  margin: auto;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transition: $transition;
+  display: flex;
+  flex-wrap: nowrap;
+
+  span,
+  .icon,
+  .icon2 {
+    display: block;
+    height: 100%;
+  }
+
+  span {
+    flex: 0 1 calc(100% - 100px);
+    width: calc(100% - 120px);
+    overflow: hidden;
+    line-height: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    left: 0;
+    transition: $transition;
+    transform: translateX(10%);
+  }
+
+  .icon {
+    flex: 0 1 60px;
+    width: 60px;
+    transition: $transition;
+    transform: translateX(40%);
+  }
+
+  .icon2 {
+    flex: 0 1 40px;
+    width: 40px;
+    transition: $transition;
+    transform: translateX(100%);
+  }
+
+  .icon img {
+    margin-top: 17px;
+  }
+
+  .icon2 img {
+    margin-top: 17px;
+  }
+
+  .button-logo {
+    filter: invert(99%) sepia(23%) saturate(971%) hue-rotate(198deg)
+      brightness(112%) contrast(100%);
+    width: 28px;
+  }
+
+  .button-more {
+    filter: invert(99%) sepia(23%) saturate(971%) hue-rotate(198deg)
+      brightness(112%) contrast(100%);
+    width: 28px;
+  }
+
+  &:hover {
+    span {
+      transform: translateX(-16%);
+      transition-delay: 0.1s;
+    }
+    .icon {
+      transform: translateX(-100%);
+    }
+    .icon2 {
+      transform: translateX(-50%);
+      transition-delay: 0.2s;
+    }
+  }
+}
