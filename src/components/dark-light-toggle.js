@@ -14,7 +14,7 @@ export default function DarkLightToggle() {
     } else {
       document.documentElement.setAttribute("data-theme", "light");
     }
-  }, []);
+  }, [checked]);
 
   function handleChange(e) {
     setChecked(e.target.checked);
