@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import BlurCard from "./pages/blurCard/blurCard";
-import FrontPage from "./components/frontPage";
-import NoMatch from "./components/noMatch";
+import FrontPage from "./pages/frontPage";
+import NoMatch from "./pages/noMatch";
 
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";

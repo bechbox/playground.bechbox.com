@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
-import "../styles/darkToggle.scss";
+import "../styles/darkToggleButton.scss";
 import { ReactComponent as SunIcon } from "../images/icons/regular/sun.svg";
 import { ReactComponent as MoonIcon } from "../images/icons/regular/moon.svg";
 
@@ -26,7 +26,7 @@ export default function DarkLightToggle() {
   }
 
   return (
-    <div className="darkmode">
+    <div className="darkmode-toggle-button">
       <input
         type="checkbox"
         id="darkmode-toggle"
