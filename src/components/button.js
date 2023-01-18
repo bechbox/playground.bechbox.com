@@ -17,14 +17,14 @@ function getTextWidth(text, font) {
 const Button = (props) => {
   return (
     <a
-      class="button"
+      className="button"
       href="https://www.bechbox.com"
       target="_blank"
       rel="noreferrer"
       role="button"
       style={{ width: parseInt(getTextWidth(props.label) * 1.5 + 90) + "px" }}
     >
-      <div class="icon">
+      <div className="icon">
         <img src={clipboard} className="button-logo" alt="plan" />
       </div>
       <span>{props.label}</span>

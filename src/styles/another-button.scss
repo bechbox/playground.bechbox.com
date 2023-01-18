@@ -1,0 +1,70 @@
+// Variables
+$color: rgb(31, 31, 31);
+$speed: "0.45s";
+$transition: all #{$speed} cubic-bezier(0.31, -0.105, 0.43, 1.4);
+
+a.another-button {
+  text-decoration: none;
+}
+
+.another-button {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  background-color: $color;
+  height: 64px;
+  line-height: 64px;
+  margin: auto;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: $transition;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+
+  .icon {
+    width: 30px;
+    margin: 7px 0 0 20px;
+
+    transition: $transition;
+    background-color: darkblue;
+    //transform: translateX(40%);
+  }
+
+  .icon2 {
+    width: 40px;
+    transition: $transition;
+    margin-top: 7px;
+    //transform: translateX(100%);
+  }
+
+  .button-logo {
+    filter: invert(99%) sepia(23%) saturate(971%) hue-rotate(198deg)
+      brightness(112%) contrast(100%);
+    width: 28px;
+  }
+
+  .button-more {
+    filter: invert(99%) sepia(23%) saturate(971%) hue-rotate(198deg)
+      brightness(112%) contrast(100%);
+    width: 28px;
+  }
+
+  &:hover {
+    span {
+      transform: translateX(-26%);
+      transition-delay: 0.1s;
+    }
+    .icon {
+      transform: translateX(-100%);
+    }
+    .icon2 {
+      transform: translateX(-50%);
+      transition-delay: 0.2s;
+    }
+  }
+}
