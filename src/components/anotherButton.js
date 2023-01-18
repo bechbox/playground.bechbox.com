@@ -11,11 +11,12 @@ function getTextWidth(text, font) {
 
   context.font = font || getComputedStyle(document.body).font;
 
-  return context.measureText(text).width;
+  return context.measureText(text).width * 1.15;
 }
 
 const AnotherButton = (props) => {
   const textWidth = parseInt(getTextWidth(props.label, "bold 18px Inter"));
+  console.log(textWidth);
   return (
     <>
       <a
@@ -29,25 +30,13 @@ const AnotherButton = (props) => {
         }}
       >
         <div className="icon">
-          <img src={clipboard} className="button-logo" alt="plan" />
+          <img src={arrowright} className="button-logo" alt="plan" />
         </div>
         <span style={{ width: textWidth + 2 + "px" }}>{props.label}</span>
         <div className="icon2">
-          <img src={arrowright} className="button-more" alt="more" />
+          <img src={clipboard} className="button-more" alt="more" />
         </div>
       </a>
-      <div>
-        <div style={{ fontSize: "18px", fontWeight: "bold" }}>
-          {props.label}
-        </div>
-        <div
-          style={{
-            width: parseInt(getTextWidth(props.label, "bold 18px Inter")),
-            height: "80px",
-            backgroundColor: "#ff0000",
-          }}
-        ></div>
-      </div>
     </>
   );
 };

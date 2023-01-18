@@ -35,6 +35,14 @@ export default function FrontPage() {
                   </div>
                 </div>
               </a>
+              <a className="playground-card" href="/another-button">
+                <div className="playground-card-content">
+                  <div className="playground-card-title">Another button</div>
+                  <div className="playground-card-description">
+                    In reply to frostin.dev
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
