@@ -13,6 +13,7 @@ import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
 
 import "./App.scss";
+import TrayPage from "./pages/trayPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/another-button" element={<AnotherButtonaPage />} />
       <Route exact path="/the-button" element={<TheButton />} />
       <Route exact path="/blur-card" element={<BlurCard />} />
+      <Route exact path="/tray" element={<TrayPage />} />
       <Route exact path="/" element={<FrontPage />} />
       <Route path="*" element={<NoMatch />} />
     </Routes>

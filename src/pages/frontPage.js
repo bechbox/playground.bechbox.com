@@ -17,6 +17,17 @@ export default function FrontPage() {
           <div className="frontpage-content">
             <div className="frontpage-content-inner">
               <h1>code / UI experiments</h1>
+              <a className="playground-card" href="/tray">
+                <div className="playground-card-content">
+                  <div className="playground-card-title">
+                    Simple mobile tray
+                  </div>
+                  <div className="playground-card-description">
+                    Making mobile websites feel more native
+                  </div>
+                </div>
+              </a>
+
               <a className="playground-card" href="/blur-card">
                 <div className="playground-card-content">
                   <div className="playground-card-title">Blur hover card</div>
